@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.topbar-container {
+  background-color: #000000;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topbar-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.color1 {
+  color: #000000;
+}
+
+.topbar-inner {
+  display: flex;
+}
+
+.topbar-logo {
+  align-items: start;
+  justify-content: left;
+}
+
+.topbar-logo {
+  /* text-align: center; */
+  margin-block: auto;
+}
+
+/* .topbar-box {
+  display: flex;
+  justify-content: ;
+} */
+
+.topbar-button-1 {
+  color: #fff;
+  margin-block: auto;
+  line-height: 1.25rem;
+  border: 1px solid #fff;
+  padding: 8px;
+  border-radius: 0.5rem;
+}
+.topbar-button-2 {
+  color: #fff;
+  background-color: #4c5fd5;
+  margin-block: auto;
+  line-height: 1.25rem;
+  padding: 8px;
+  border-radius: 0.5rem;
+}
+
+.serch-box {
+  background-color: #dadbf1;
+  padding: 1.875rem;
+}
+
+.serch-inner-title {
+  margin-inline: auto;
+  text-align: center;
+}
+
+.serch-inner-box {
+  color: #888585;
+  background-color: rgb(246, 241, 236);
+  border: 1px solid #000000;
+  border-radius: 0.4rem;
+  padding: 0.9375rem;
+  margin-inline: 4.375rem;
+}
+
+.topbar-logo {
+  color: #fff;
+}
+
+.topbar-button {
+  color: #fff;
+}
+
+.main-container {
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  column-gap: 12px;
+  row-gap: 1.5rem;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.container {
+  max-width: 100%;
+  padding-block: 40px;
+  display: flex;
+  flex-basis: 0;
+  flex-grow: 1;
+  margin-inline: auto;
+  padding-inline: 2.5rem;
+  max-width: 50rem;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-wrap-opt-1 {
+  column-gap: 0.75rem;
+  row-gap: 1.5rem;
+  justify-content: start;
+  align-items: start;
+}
+
+.flex-wrap-opt-1 > * {
+  flex-grow: 1;
+  flex-basis: 0;
+  min-width: 12.5rem;
+}
+
+.category {
+  margin-inline: auto;
+  max-width: 100%;
+  padding-inline: 0.875rem;
+  display: flex;
+  min-width: 12.5rem;
+}
+
+img {
+  max-width: 3.125rem;
+}
+
+.category-icon {
+  margin-right: 0.625rem;
+  padding-block: 1.25rem;
+}
+
+.learn-more {
+  margin-top: 1.25rem;
+  color: rgb(75, 75, 188);
+}
+
+.foot {
+  background-color: #000000;
+  padding: 1rem;
+}
+
+.foot-container {
+  display: flex;
+  column-gap: 1.875rem;
+}
+
+.flex-wrap-opt-2 {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 40px;
+  min-width: 6.25rem;
+  padding-inline: 2.5rem;
+}
+
+h3 {
+  color: #fff;
+}
+
+p {
+  color: #fff;
+}
+
+.studio {
+  text-align: end;
+}
