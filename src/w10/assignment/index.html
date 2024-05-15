@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>w10</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/card.css" />
+    <script
+      src="https://kit.fontawesome.com/6284ce779d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="navigation">
+      <div class="navigation-left">
+        <div class="navigation-left-icorn">
+          <svg
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-label="Home"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32ZM15.4225 22.7124V25.607C18.1716 25.7753 20.8606 24.7551 22.806 22.8056C26.5647 19.0469 26.5647 12.9531 22.806 9.19477C22.4644 8.85297 22.0977 8.53716 21.709 8.25L19.6336 10.3252L10.3245 19.6332C8.61894 16.9674 8.99804 13.4741 11.2358 11.2362C12.6405 9.8287 14.5963 9.11525 16.5775 9.28762V6.39295C13.8284 6.22472 11.1394 7.24504 9.19403 9.19458C5.43532 12.9532 5.43532 19.047 9.19403 22.8054C9.53564 23.1472 9.90231 23.463 10.291 23.7501L12.3663 21.675L21.6754 12.3668C23.381 15.0325 23.0019 18.5259 20.7641 20.7638C19.3594 22.1713 17.4036 22.8847 15.4225 22.7124Z"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </div>
+        <div class="navigation-left-contant">
+          <div class="navigation-left-contant-use_cases">
+            USE CASES
+            <svg
+              width="12"
+              height="12"
+              viewBox="0 0 12 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="ml-1"
+            >
+              <path
+                d="M6.79669 8.0716C6.41769 8.6428 5.58231 8.6428 5.20331 8.0716L3.16242 4.9957C2.73821 4.35637 3.19436 3.5 3.95911 3.5L8.04089 3.5C8.80564 3.5 9.26179 4.35637 8.83758 4.9957L6.79669 8.0716Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </div>
+          <div class="navigation-left-contant-pricing">PRICING</div>
+          <div class="navigation-left-contant-support">SUPPORT</div>
+          <div class="navigation-left-contant-resources">
+            RESOURCES<svg
+              width="12"
+              height="12"
+              viewBox="0 0 12 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="ml-1"
+            >
+              <path
+                d="M6.79669 8.0716C6.41769 8.6428 5.58231 8.6428 5.20331 8.0716L3.16242 4.9957C2.73821 4.35637 3.19436 3.5 3.95911 3.5L8.04089 3.5C8.80564 3.5 9.26179 4.35637 8.83758 4.9957L6.79669 8.0716Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="navigation-right">
+        <div class="navigation-right-login">LOG IN</div>
+        <div class="navigation-right-start">START FREE TRIAL</div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="sidebar">
+        <div class="sidebar-search">
+          <div class="sidebar-search-text">Search Library</div>
+          <!-- <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="pointer-events-none absolute left-3 top-[42px]"
+          >
+            <title>Search</title>
+            <path
+              d="M8.33333 13.6667C11.555 13.6667 14.1667 11.055 14.1667 7.83333C14.1667 4.61167 11.555 2 8.33333 2C5.11167 2 2.5 4.61167 2.5 7.83333C2.5 11.055 5.11167 13.6667 8.33333 13.6667Z"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+            <path
+              d="M17.5 17L12.5 12"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </svg> -->
+          <from class="search-box" action="" method="">
+            <input
+              class="search-txt"
+              type="text"
+              name=""
+              placeholder="검색어를 입력 하세요"
+            />
+            <button class="search-bth" type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </from>
+          <!-- <form>
+            <div class="searchbar">
+              <div class="searchbar-text"></div>
+              <div class="searchbar-box"></div>
+            </div>
+          </form>
+          <div class="sidebar-search-text">Search Library</div>
+          <div class="sidebar-search-input">
+            <input
+              class="sidebar-search-box"
+              type="search"
+              placeholder=""
+              value=""
+            /> -->
+          <!-- </div> -->
+        </div>
+        <div class="sidebar-middle">
+          <div class="sidebar-middle-home">Home</div>
+          <div class="sidebar-middle-collection">Collection</div>
+          <div class="sidebar-middle-categories">
+            <div class="sidebar-middle-categories-text">Categories</div>
+            <svg
+              width="10"
+              height="6"
+              viewBox="0 0 10 6"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="ml-auto mr-5"
+            >
+              <title>Disclose arrow</title>
+              <path
+                d="M1 1L5 5L9 1"
+                stroke="#4B4B4E"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <div class="sidebar-ppbox">
+          <h4 class="sidebar-ppbox-title">Contribute to Stark</h4>
+          <p class="sidebar-ppbox-text">
+            Got any accessibility resources or news?
+          </p>
+          <a class="sidebar-ppbox-submit">Submit a Resource</a>
+        </div>
+      </div>
+      <div class="card-collection">
+        <div class="title">
+          <div class="title-top">
+            <h2 class="headline">New in the library</h2>
+            <a class="view">VIEW ALL</a>
+          </div>
+          <p class="subtitle">
+            Newly added accessibility resources, guides, and more.
+          </p>
+        </div>
+        <div class="card">
+          <div class="card__icorn">
+            <img
+              src="https://res.cloudinary.com/stark-lab/image/upload/v1679345547/daisy_high_e2e14faca3.jpg"
+              class="library-thumbnail rounded-lg"
+              width="40"
+              height="40"
+              alt="DAISY Consortium"
+            />
+          </div>
+          <div class="card__resources">resources</div>
+          <h4 class="card__content">Inclusive Publishing</h4>
+        </div>
+        <div class="card">
+          <div class="card__icorn">
+            <img
+              src="https://res.cloudinary.com/stark-lab/image/upload/v1679345933/Screenshot_2023_03_20_at_3_58_45_PM_b615f86e7e.png"
+              class="library-thumbnail rounded-lg"
+              width="40"
+              height="40"
+              alt="The Accessible Publishing Learning Network"
+            />
+          </div>
+          <div class="card__resources">resources</div>
+          <h4 class="card__content desc">
+            The APLN (Accessible Publishing Learning Networks)
+          </h4>
+        </div>
+        <div class="card">
+          <div class="card__icorn">
+            <img
+              src="https://res.cloudinary.com/stark-lab/image/upload/v1679345736/uni_profile_93228_9c84b19231.jpg"
+              class="library-thumbnail rounded-lg"
+              width="40"
+              height="40"
+              alt="Humber College Institute of Technology and Advanced Learning"
+            />
+          </div>
+          <div class="card__resources">resources</div>
+          <h4 class="card__content">Making Accessible Books</h4>
+        </div>
+        <div class="card">
+          <div class="card__icorn">
+            <img
+              src="https://res.cloudinary.com/stark-lab/image/upload/v1679345547/daisy_high_e2e14faca3.jpg"
+              class="library-thumbnail rounded-lg"
+              width="40"
+              height="40"
+              alt="DAISY Consortium"
+            />
+          </div>
+          <div class="card__resources">resources</div>
+          <h4 class="card__content desc">
+            The DAISY Consortium's Accessible Publishing Knowledge Base
+          </h4>
+        </div>
+        <div class="card">
+          <div class="card__icorn">
+            <img
+              src="https://res.cloudinary.com/stark-lab/image/upload/v1658845042/language_please_logo_d4b822280f.png"
+              class="library-thumbnail rounded-lg"
+              width="40"
+              height="40"
+              alt="language please"
+            />
+          </div>
+          <div class="card__resources">resources</div>
+          <h4 class="card__content desc">
+            Language, Please: Style Guide & Resources for journalists and
+            storytellers
+          </h4>
+        </div>
+        <div class="card">
+          <div class="card__icorn">
+            <img
+              src="https://res.cloudinary.com/stark-lab/image/upload/v1653070254/library_author_google_7723cb132a.png"
+              class="library-thumbnail rounded-lg"
+              width="40"
+              height="40"
+              alt="Google"
+            />
+          </div>
+          <div class="card__resources">resources</div>
+          <h4 class="card__content">
+            4 steps to more inclusive, precise language
+          </h4>
+        </div>
+      </div>
+      <div class="featured-collection">
+        <div class="featured-title">
+          <div class="featured-title-top">
+            <h2 class="featured-headline">Featured Collections</h2>
+            <a class="featured-view view">VIEW ALL</a>
+          </div>
+          <p class="subtitle">
+            Handpicked and curated collections around accessibility.
+          </p>
+        </div>
+        <div class="featured-card card-1">
+          <a class="featured-box">
+            <h4 class="featured-card-title">Disability Employment</h4>
+            <img
+              class="collections-card__image width-[261px] absolute bottom-0 left-0"
+              loading="lazy"
+              alt=""
+              src="https://res.cloudinary.com/stark-lab/image/upload/v1653845742/library_collection_Collection_Boundless_Disability_Employment_c297d236d9.png"
+            />
+          </a>
+        </div>
+        <div class="featured-card card-2">
+          <a class="featured-box">
+            <h4 class="featured-card-title">Disability Employment</h4>
+            <img
+              class="collections-card__image width-[261px] absolute bottom-0 left-0"
+              loading="lazy"
+              alt=""
+              src="https://res.cloudinary.com/stark-lab/image/upload/v1653845743/library_collection_making_accessible_color_combos_42c8d90a99.png"
+            />
+          </a>
+        </div>
+        <div class="featured-card card-1">
+          <a class="featured-box">
+            <h4 class="featured-card-title">Disability Employment</h4>
+            <img
+              class="collections-card__image width-[261px] absolute bottom-0 left-0"
+              loading="lazy"
+              alt=""
+              src="https://res.cloudinary.com/stark-lab/image/upload/v1653845743/library_collection_Inclusive_Social_Media_b9669e6d39.png"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="bottom">
+        <div class="bottom-grid">
+          <div class="bottom-grid-card">
+            <p class="bottom-grid-card-title">USE CASES</p>
+            <p class="bottom-grid-card-text">For Designers</p>
+            <p class="bottom-grid-card-text">For Developers</p>
+            <p class="bottom-grid-card-text">For Product Managers</p>
+            <p class="bottom-grid-card-text">For Complliance Managers</p>
+          </div>
+          <div class="bottom-grid-card">
+            <p class="bottom-grid-card-title">RESOURCES</p>
+            <p class="bottom-grid-card-text">Blog</p>
+            <p class="bottom-grid-card-text">Library</p>
+            <p class="bottom-grid-card-text">Releses Notes</p>
+            <p class="bottom-grid-card-text">Slack Community</p>
+          </div>
+          <div class="bottom-grid-card">
+            <p class="bottom-grid-card-title">HELP</p>
+            <p class="bottom-grid-card-text">My Account</p>
+            <p class="bottom-grid-card-text">Support Docs</p>
+            <p class="bottom-grid-card-text">Contact Us</p>
+            <p class="bottom-grid-card-text">Feature Requests</p>
+          </div>
+          <div class="bottom-grid-card">
+            <p class="bottom-grid-card-title">COMPANY</p>
+            <p class="bottom-grid-card-text">Stark Framework</p>
+            <p class="bottom-grid-card-text">Privacy Policy</p>
+            <p class="bottom-grid-card-text">Terms of Service</p>
+            <p class="bottom-grid-card-text">Code of Conduct</p>
+          </div>
+          <div class="bottom-grid-card">
+            <p class="bottom-grid-card-title">SECURITY</p>
+            <p class="bottom-grid-card-text">Security Overview</p>
+            <p class="bottom-grid-card-text">Cookie Policy</p>
+            <p class="bottom-grid-card-text">GDPR</p>
+            <p class="bottom-grid-card-text">Status</p>
+          </div>
+          <div class="bottom-grid-card">
+            <p class="bottom-grid-card-title">DESIGN INTEGRATIONS</p>
+            <p class="bottom-grid-card-text">Stark for Figma</p>
+            <p class="bottom-grid-card-text">Stark for FigJam</p>
+            <p class="bottom-grid-card-text">Stark for Sketch</p>
+            <p class="bottom-grid-card-text">Stark for Adobe XD</p>
+          </div>
+          <div class="bottom-grid-card">
+            <p class="bottom-grid-card-title">DEVELOPER INTEGRATIONS</p>
+            <p class="bottom-grid-card-text">Stark for Chrome</p>
+            <p class="bottom-grid-card-text">Stark for Firefox</p>
+            <p class="bottom-grid-card-text">Stark for Edge</p>
+            <p class="bottom-grid-card-text">Stark for Safari</p>
+            <p class="bottom-grid-card-text">Stark for Arc</p>
+            <p class="bottom-grid-card-text">Stark for Brave</p>
+          </div>
+        </div>
+        <div class="bottom-low">
+          <div class="bottom-low-icorn"></div>
+          <div class="bottom-low-yellow"></div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-bottom-left">
+          <a
+            href="https://twitter.com/getstarkco"
+            target="_blank"
+            title="(opens in new tab)"
+            ><img
+              alt="Stark's Twitter account link"
+              src="https://images.getstark.co/marketing/social-media/twitter.png"
+              class="w-8"
+          /></a>
+          <a
+            href="https://www.instagram.com/getstarkco/"
+            target="_blank"
+            title="(opens in new tab)"
+            ><img
+              alt="Stark's Instagram account link"
+              src="https://images.getstark.co/marketing/social-media/instagram.png"
+              class="w-8"
+          /></a>
+          <a href="/slack/" target="_blank" title="(opens in new tab)"
+            ><img
+              alt="Stark's Slack account link"
+              src="https://images.getstark.co/marketing/social-media/slack.png"
+              class="w-8"
+          /></a>
+          <a
+            class="size"
+            href="https://www.linkedin.com/company/getstarkco"
+            target="_blank"
+            title="(opens in new tab)"
+            ><img
+              alt="Stark's LinkedIn account link"
+              src="https://images.getstark.co/marketing/social-media/share-linkedin.webp"
+              class="w-8"
+          /></a>
+          <a
+            href="https://www.youtube.com/channel/UCnhYIgXU1GsrLnLv-NFqVNw/featured"
+            target="_blank"
+            title="(opens in new tab)"
+            ><img
+              alt="Stark's YouTube account link"
+              src="https://images.getstark.co/marketing/social-media/youtube.png"
+              class="w-8"
+          /></a>
+        </div>
+        <p class="footer-bottom-right">
+          MADE REMOTELY WITH LOVE BY STARK LAB, INK. COPYRIGHT 2023
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
