@@ -111,6 +111,7 @@ h4 {
   background-color: #f3f2fc;
   padding: 24px;
   border-radius: 8px;
+  margin-inline: auto;
 }
 .sidebar-ppbox-submit {
   color: #fff;
