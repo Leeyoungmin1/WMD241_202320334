@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  overflow-x: scroll;
+  max-width: 60rem;
+  background-color: aqua;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+  padding-block: 0.75rem;
+  font-size: 1.25rem;
+  line-height: 100%;
+  text-transform: uppercase;
+  font-weight: 600;
+  display: flex;
+}
+
+.menulist {
+  background-color: aquamarine;
+  list-style: none;
+  padding-left: 0;
+  margin-block: 0;
+  display: flex;
+  gap: 1rem;
+}

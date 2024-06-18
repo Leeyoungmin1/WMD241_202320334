@@ -1,0 +1,217 @@
+@use 'sass:list';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+$bgcolors: #e30512, #1d3fbb, #ffbe00, #ff651a, #00c1b5, #fff, #fd5f8b;
+
+:root {
+  --fixed-m-x: 0.9375rem;
+  --fixed-m-y: 1.25rem;
+  --grid-m-x: 0.9375rem;
+  --grid-m-y: 1.25rem;
+  --logo-h: 1.875rem;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5625rem;
+  background-color: list.nth($bgcolors, 7);
+  animation-name: bg-change;
+  animation-timeline: scroll();
+}
+
+@keyframes bg-change {
+  @for $i from 0 through 5 {
+    #{100 / 6 * $i}#{'%'},
+    #{100 / 6 * $i + 100 /12}#{'%'} {
+      background-color: list.nth($bgcolors, 7 - $i);
+    }
+  }
+  100% {
+    background-color: list.nth($bgcolors, 1);
+  }
+
+  // 0%,
+  // #{calc(100 / 6 * 0.5)}#{'%'} {
+  //   background-color: list.nth($bgcolors, 7);
+  // }
+  // #{calc(100 / 6)}#{'%'} {
+  //   background-color: list.nth($bgcolors, 6);
+  // }
+  // #{calc(100 / 6 * 2)}#{'%'} {
+  //   background-color: list.nth($bgcolors, 5);
+  // }
+  // #{calc(100 / 6 * 3)}#{'%'} {
+  //   background-color: list.nth($bgcolors, 4);
+  // }
+  // #{calc(100 / 6 * 4)}#{'%'} {
+  //   background-color: list.nth($bgcolors, 3);
+  // }
+  // #{calc(100 / 6 * 5)}#{'%'} {
+  //   background-color: list.nth($bgcolors, 2);
+  // }
+  // 100% {
+  //   background-color: list.nth($bgcolors, 1);
+  // }
+}
+
+img {
+  display: block;
+}
+
+.fixed {
+  position: fixed;
+  z-index: 2;
+
+  @at-root a#{&},
+    & a {
+    color: currentColor;
+    // text-decoration: none;
+  }
+
+  p {
+    margin-block: 0;
+  }
+
+  &--pos {
+    &-tl {
+      top: var(--fixed-m-y);
+      left: var(--fixed-m-x);
+    }
+    &-tr {
+      top: var(--fixed-m-y);
+      right: var(--fixed-m-x);
+    }
+    &-br {
+      bottom: var(--fixed-m-y);
+      right: var(--fixed-m-x);
+    }
+    &-bl {
+      right: calc(var(--fixed-m-x) + 4rem + 6.25rem);
+      bottom: var(--fixed-m-y);
+      left: var(--fixed-m-x);
+    }
+  }
+
+  &--role {
+    &-logo {
+      height: var(--logo-h);
+      aspect-ratio: 519 / 58;
+    }
+
+    &-contact {
+      font-weight: 700;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    &-list {
+      margin-block: 0;
+      padding-left: 0;
+      line-height: 1.8rem;
+      text-transform: capitalize;
+      list-style: none;
+      transform: rotate(180deg);
+      > li {
+        transform: rotate(180deg);
+        > a {
+          text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    &-about {
+      max-width: 40ch;
+      font-weight: 700;
+      text-wrap: balance;
+    }
+  }
+  &__copyright {
+    font-size: 0.75rem;
+    font-weight: 400;
+    > a {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__policy {
+    display: block;
+    margin-top: 1lh;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.wrapper {
+  z-index: 1;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+// #issue {
+//   @for $i from 1 through 7 {
+//     &-#{$i} {
+//       background-color: list.nth($bgcolors, $i);
+//     }
+//   }
+// }
+
+.issue {
+  scroll-snap-align: center;
+  display: grid;
+  // grid-template-rows: calc(2 * var(--fixed-m-x) + var(--logo-h)) 1fr 1fr 1fr;
+  grid-template-rows: minmax(calc(2 * var(--fixed-m-y) + var(--logo-h)), 1fr) auto 5lh minmax(
+      calc(2 * var(--fixed-m-y)),
+      0.5fr
+    );
+  grid-template-columns: minmax(var(--fixed-m-x), 1fr) minmax(0, 26.25rem) minmax(
+      var(--fixed-m-x),
+      1fr
+    );
+  min-height: 100svh;
+
+  &__img {
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: stretch;
+  }
+
+  &__text {
+    grid-column: 2;
+    grid-row: 3;
+    text-align: center;
+  }
+
+  &__title {
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+
+  &__link {
+    margin-block: 1lh, 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 1lh;
+  }
+}
